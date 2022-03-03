@@ -1,0 +1,14 @@
+x = input("Give me a number :")
+y = list(x)
+total = 0
+is_true = x.isnumeric()
+if is_true is True:
+    for i in range(len(y)):
+        a = int(y[i]) ** len(y)
+        total += a
+    if total == int(x):
+        print(f"{total} is an amstrong number")
+    else:
+        print(f"{total} is not an amstrong number ")
+else:
+    print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
